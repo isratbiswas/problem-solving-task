@@ -43,3 +43,19 @@ const addNumber = (number) => number + 5;
 const composedFunction = (number) => addNumber(double(square(number)));
 
 console.log(composedFunction(9));
+
+// Task -4
+const cars = [
+  { model: "toyota", make: "abc", year: 2012 },
+  { model: "BMW", make: "abc", year: 2008 },
+  { model: "Audi", make: "abc", year: 2015 },
+  { model: "toyota1", make: "abc", year: 2020 },
+  { model: "toyota2", make: "abc", year: 2024 },
+];
+
+const getCars = (cars) => {
+  return cars.sort((a, b) => a.year - b.year);
+};
+console.log(getCars(cars));
+
+//task-5
