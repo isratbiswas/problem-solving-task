@@ -56,7 +56,8 @@ const getCars = (cars) => {
 };
 console.log(getCars(cars));
 
-//task-5
+//task-5:Task: Find and Modify
+//-Write a function that searches an array of objects for a specific person by name. If found, modify their age property. Print the updated array.
 
 const persons = [
   { name: "Sabiha", age: 27 },
@@ -73,3 +74,16 @@ const updateAge = (arr, name, newAge) => {
 };
 
 console.log(updateAge(persons, "Rihana", 40));
+
+//task-6
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+const sumEven = (arr) => {
+  return arr.reduce((sum, num) => {
+    return arr.reduce((sum, num) => {
+      return num % 2 === 0 ? sum + num : sum;
+    }, 0);
+  });
+};
+
+console.log(sumEven(numbers));
