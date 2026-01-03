@@ -33,3 +33,13 @@ const getBookTitle = (books) => {
 };
 
 console.log(getBookTitle(books));
+
+//Task -3
+
+const square = (number) => number * number;
+const double = (number) => number * 2;
+const addNumber = (number) => number + 5;
+
+const composedFunction = (number) => addNumber(double(square(number)));
+
+console.log(composedFunction(9));
