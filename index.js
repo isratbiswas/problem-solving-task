@@ -46,11 +46,9 @@ console.log(composedFunction(9));
 
 // Task -4
 const cars = [
-  { model: "toyota", make: "abc", year: 2012 },
-  { model: "BMW", make: "abc", year: 2008 },
-  { model: "Audi", make: "abc", year: 2015 },
-  { model: "toyota1", make: "abc", year: 2020 },
-  { model: "toyota2", make: "abc", year: 2024 },
+  { make: "Toyota", model: "Corolla", year: 2018 },
+  { make: "Honda", model: "Civic", year: 2015 },
+  { make: "BMW", model: "X5", year: 2020 },
 ];
 
 const getCars = (cars) => {
@@ -59,3 +57,19 @@ const getCars = (cars) => {
 console.log(getCars(cars));
 
 //task-5
+
+const persons = [
+  { name: "Sabiha", age: 27 },
+  { name: "Rihana", age: 33 },
+  { name: "Hazera", age: 32 },
+];
+
+const updateAge = (arr, name, newAge) => {
+  const person = arr.find((p) => p.name === name);
+  if (person) {
+    person.age = newAge;
+  }
+  return arr;
+};
+
+console.log(updateAge(persons, "Rihana", 40));
