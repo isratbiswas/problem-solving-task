@@ -1,81 +1,81 @@
-// Task-1
+// // Task-1
 
-const people = [
-  { name: "Ali", age: 3, gender: "male" },
-  { name: "Nabihah", age: 8, gender: "female" },
-  { name: "Rafi", age: 4, gender: "male" },
-  { name: "Liza", age: 38, gender: "female" },
-  { name: "Borna", age: 37, gender: "female" },
-  { name: "Riya", age: 23, gender: "female" },
-  { name: "Washir", age: 12, gender: "male" },
-];
+// const people = [
+//   { name: "Ali", age: 3, gender: "male" },
+//   { name: "Nabihah", age: 8, gender: "female" },
+//   { name: "Rafi", age: 4, gender: "male" },
+//   { name: "Liza", age: 38, gender: "female" },
+//   { name: "Borna", age: 37, gender: "female" },
+//   { name: "Riya", age: 23, gender: "female" },
+//   { name: "Washir", age: 12, gender: "male" },
+// ];
 
-const getMales = (arr) => {
-  return arr
-    .filter((person) => person.gender !== "female")
-    .map((person) => person.name);
-};
+// const getMales = (arr) => {
+//   return arr
+//     .filter((person) => person.gender !== "female")
+//     .map((person) => person.name);
+// };
 
-console.log(getMales(people));
+// console.log(getMales(people));
 
-//Task -2
+// //Task -2
 
-const books = [
-  { title: "ABC", author: "ali", year: 2022 },
-  { title: "BCA", author: "ali", year: 2022 },
-  { title: "BBA", author: "ali", year: 2022 },
-  { title: "CCA", author: "ali", year: 2022 },
-  { title: "CCD", author: "ali", year: 2022 },
-];
+// const books = [
+//   { title: "ABC", author: "ali", year: 2022 },
+//   { title: "BCA", author: "ali", year: 2022 },
+//   { title: "BBA", author: "ali", year: 2022 },
+//   { title: "CCA", author: "ali", year: 2022 },
+//   { title: "CCD", author: "ali", year: 2022 },
+// ];
 
-const getBookTitle = (books) => {
-  return books.map((book) => book.title);
-};
+// const getBookTitle = (books) => {
+//   return books.map((book) => book.title);
+// };
 
-console.log(getBookTitle(books));
+// console.log(getBookTitle(books));
 
-//Task -3
+// //Task -3
 
-const square = (number) => number * number;
-const double = (number) => number * 2;
-const addNumber = (number) => number + 5;
+// const square = (number) => number * number;
+// const double = (number) => number * 2;
+// const addNumber = (number) => number + 5;
 
-const composedFunction = (number) => addNumber(double(square(number)));
+// const composedFunction = (number) => addNumber(double(square(number)));
 
-console.log(composedFunction(9));
+// console.log(composedFunction(9));
 
-// Task -4
-const cars = [
-  { make: "Toyota", model: "Corolla", year: 2018 },
-  { make: "Honda", model: "Civic", year: 2015 },
-  { make: "BMW", model: "X5", year: 2020 },
-];
+// // Task -4
+// const cars = [
+//   { make: "Toyota", model: "Corolla", year: 2018 },
+//   { make: "Honda", model: "Civic", year: 2015 },
+//   { make: "BMW", model: "X5", year: 2020 },
+// ];
 
-const getCars = (cars) => {
-  return cars.sort((a, b) => a.year - b.year);
-};
-console.log(getCars(cars));
+// const getCars = (cars) => {
+//   return cars.sort((a, b) => a.year - b.year);
+// };
+// console.log(getCars(cars));
 
-//task-5:Task: Find and Modify
-//-Write a function that searches an array of objects for a specific person by name. If found, modify their age property. Print the updated array.
+// //task-5:Task: Find and Modify
+// //-Write a function that searches an array of objects for a specific person by name. If found, modify their age property. Print the updated array.
 
-const persons = [
-  { name: "Sabiha", age: 27 },
-  { name: "Rihana", age: 33 },
-  { name: "Hazera", age: 32 },
-];
+// const persons = [
+//   { name: "Sabiha", age: 27 },
+//   { name: "Rihana", age: 33 },
+//   { name: "Hazera", age: 32 },
+// ];
 
-const updateAge = (arr, name, newAge) => {
-  const person = arr.find((p) => p.name === name);
-  if (person) {
-    person.age = newAge;
-  }
-  return arr;
-};
+// const updateAge = (arr, name, newAge) => {
+//   const person = arr.find((p) => p.name === name);
+//   if (person) {
+//     person.age = newAge;
+//   }
+//   return arr;
+// };
 
-console.log(updateAge(persons, "Rihana", 40));
+// console.log(updateAge(persons, "Rihana", 40));
 
-//task-6
+// //task-6
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 const sumEven = (arr) => {
@@ -88,12 +88,26 @@ const sumEven = (arr) => {
 
 console.log(sumEven(numbers));
 
-//task -7
+// //task -7
 
-const isLeapYear = (year) => {
-  if (year % 400 === 0) return true;
-  if (year % 100 === 0) return false;
-  return year % 4 === 0;
-};
+// const isLeapYear = (year) => {
+//   if (year % 400 === 0) return true;
+//   if (year % 100 === 0) return false;
+//   return year % 4 === 0;
+// };
 
-console.log(isLeapYear(2026));
+// console.log(isLeapYear(2026));
+
+// //
+// var greeting = "Hello , World";
+
+// function sayHello() {
+//   console.log(greeting);
+// }
+// sayHello();
+
+// var x = 10;
+// debugger;
+// x = x + 1;
+// debugger;
+// console.log(x);
